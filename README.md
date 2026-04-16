@@ -27,12 +27,16 @@ excel-cli path/to/data.py --export output.xlsx
 
 ```python
 # data.py
+# 注意：Excel 单元格索引从 1 开始
+# 第1行数据对应 A1, B1, C1... (row_idx=0)
+# 第2行数据对应 A2, B2, C2... (row_idx=1)
+
 data = {
     "headers": ["Name", "Age", "City"],
     "rows": [
-        ["Alice", 25, "New York"],
-        ["Bob", 30, "London"],
-        ["Total", "=SUM(B2:B3)", ""]
+        ["Alice", 25, "New York"],    # 第1行 (A1-C1)
+        ["Bob", 30, "London"],        # 第2行 (A2-C2)
+        ["Total", "=SUM(B1:B2)", ""], # 第3行 (A3-C3)
     ]
 }
 
