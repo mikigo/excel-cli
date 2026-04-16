@@ -26,7 +26,7 @@ class ExcelCliApp(App):
     }
     
     .header-bar Label {
-        color: $text-on-primary;
+        color: white;
         text-style: bold;
     }
     

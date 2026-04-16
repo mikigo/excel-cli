@@ -19,7 +19,7 @@ class TableWidget(Static):
     }
     
     .table-header Label {
-        color: $text-on-primary;
+        color: white;
         text-style: bold;
         width: 20;
         min-width: 10;
@@ -31,12 +31,8 @@ class TableWidget(Static):
         background: $surface;
     }
     
-    .table-row:focus-within {
-        background: $primary-lighten-1;
-    }
-    
-    .table-row:nth-child(even) {
-        background: $surface-lighten-1;
+    .table-row:even {
+        background: $panel;
     }
     
     .table-cell {
@@ -62,7 +58,7 @@ class TableWidget(Static):
     
     .selected-cell {
         background: $accent;
-        color: $text-on-accent;
+        color: white;
     }
     """
     
